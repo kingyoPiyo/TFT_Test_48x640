@@ -3861,7 +3861,7 @@ void send_CMD(uint8_t cmd, uint8_t dc)
         // data
         DIO_DC_H();
     } else {
-        // data
+        // command
         DIO_DC_L();
     }
     __asm__("nop"); __asm__("nop"); __asm__("nop"); __asm__("nop");
