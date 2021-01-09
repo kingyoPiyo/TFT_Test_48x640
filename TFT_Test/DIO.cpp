@@ -13,19 +13,10 @@ void DIO_Init(void)
     DDRB |= 0b00111111; // D6, D7, CS#, WR#, D/C#, RD#
 }
 
-
-// https://twitter.com/s_osafune/status/1346171487422541825
 void DIO_Write(const uint8_t data)
 {
-    register uint8_t td = PORTD;
-    register uint8_t tb = PORTB;
-
-    td = (data << 2) | (td & 0x03);
-    tb = (data >> 6) | (tb & 0xFC);
-
-    // PORTDとPORTB間のタイミング差を小さくするため一旦レジスタを介在させて出力
-    PORTD = td;
-    PORTB = tb;
+    PORTD = (data << 2) | (PORTD & 0x03);
+    PORTB = (data >> 6) | (PORTB & 0xFC);
 }
 
 void DIO_CS_L(void)
