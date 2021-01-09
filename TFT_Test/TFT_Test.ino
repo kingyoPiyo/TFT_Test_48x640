@@ -3875,7 +3875,6 @@ void send_CMD(uint8_t cmd, uint8_t dc)
 void setup()
 {
     DIO_Init();
-    cli();  // 裏で1msタイマが動いてるらしい
 
     DIO_PIN2_H();
     DIO_CS_H();
