@@ -49,12 +49,12 @@ void DIO_DC_H(void)
     PORTB |= (1 << 4);
 }
 
-void DIO_PIN2_L(void)
+void DIO_RST_L(void)
 {
     PORTB &= ~(1 << 5);
 }
 
-void DIO_PIN2_H(void)
+void DIO_RST_H(void)
 {
     PORTB |= (1 << 5);
 }

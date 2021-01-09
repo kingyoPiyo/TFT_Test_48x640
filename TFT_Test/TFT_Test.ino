@@ -33,14 +33,10 @@ void setup()
 
     DIO_Init();
 
-    DIO_PIN2_H();
-    DIO_CS_H();
-    DIO_DC_H();
-    delay(100);
-    DIO_PIN2_L();
-    delay(100);
-    DIO_PIN2_H();
-    delay(100);
+    DIO_RST_L();
+    delay(10);
+    DIO_RST_H();
+    delay(10);
     DIO_CS_L();
 
     // TFT Driver 初期化（ロジアナDump値そのまま）

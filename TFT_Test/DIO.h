@@ -27,7 +27,7 @@ void DIO_CLK_H(void);
 void DIO_DC_L(void);
 void DIO_DC_H(void);
 
-void DIO_PIN2_L(void);
-void DIO_PIN2_H(void);
+void DIO_RST_L(void);
+void DIO_RST_H(void);
 
 #endif /* __DIO_H__ */
