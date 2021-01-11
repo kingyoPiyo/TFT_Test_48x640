@@ -80,44 +80,44 @@ module lcd_sushi (
         end else if (o_lcd_wr) begin
             r_pos_x_fixed <= r_lcd_pos_x + r_lcd_pos_x_offset;
             
-            if (r_pos_x_fixed >= 0 && r_pos_x_fixed <= 48) begin
-                r_rom_raddr <= r_pos_x_fixed + (r_lcd_pos_y * 48);
+            if (r_pos_x_fixed >= 10'd0 && r_pos_x_fixed <= 10'd48) begin
+                r_rom_raddr <= r_pos_x_fixed + (r_lcd_pos_y * 6'd48);
             end
 
-            if (r_pos_x_fixed >= 80 && r_pos_x_fixed <= 128) begin
-                r_rom_raddr <= (r_pos_x_fixed - 80) + (r_lcd_pos_y * 48);
+            if (r_pos_x_fixed >= 10'd80 && r_pos_x_fixed <= 10'd128) begin
+                r_rom_raddr <= (r_pos_x_fixed - 10'd80) + (r_lcd_pos_y * 6'd48);
             end
 
-            if (r_pos_x_fixed >= 160 && r_pos_x_fixed <= 208) begin
-                r_rom_raddr <= (r_pos_x_fixed - 160) + (r_lcd_pos_y * 48);
+            if (r_pos_x_fixed >= 10'd160 && r_pos_x_fixed <= 10'd208) begin
+                r_rom_raddr <= (r_pos_x_fixed - 10'd160) + (r_lcd_pos_y * 6'd48);
             end
 
-            if (r_pos_x_fixed >= 240 && r_pos_x_fixed <= 288) begin
-                r_rom_raddr <= (r_pos_x_fixed - 240) + (r_lcd_pos_y * 48);
+            if (r_pos_x_fixed >= 10'd240 && r_pos_x_fixed <= 10'd288) begin
+                r_rom_raddr <= (r_pos_x_fixed - 10'd240) + (r_lcd_pos_y * 6'd48);
             end
 
-            if (r_pos_x_fixed >= 320 && r_pos_x_fixed <= 368) begin
-                r_rom_raddr <= (r_pos_x_fixed - 320) + (r_lcd_pos_y * 48);
+            if (r_pos_x_fixed >= 10'd320 && r_pos_x_fixed <= 10'd368) begin
+                r_rom_raddr <= (r_pos_x_fixed - 10'd320) + (r_lcd_pos_y * 6'd48);
             end
 
-            if (r_pos_x_fixed >= 400 && r_pos_x_fixed <= 448) begin
-                r_rom_raddr <= (r_pos_x_fixed - 400) + (r_lcd_pos_y * 48);
+            if (r_pos_x_fixed >= 10'd400 && r_pos_x_fixed <= 10'd448) begin
+                r_rom_raddr <= (r_pos_x_fixed - 10'd400) + (r_lcd_pos_y * 6'd48);
             end
 
-            if (r_pos_x_fixed >= 480 && r_pos_x_fixed <= 528) begin
-                r_rom_raddr <= (r_pos_x_fixed - 480) + (r_lcd_pos_y * 48);
+            if (r_pos_x_fixed >= 10'd480 && r_pos_x_fixed <= 10'd528) begin
+                r_rom_raddr <= (r_pos_x_fixed - 10'd480) + (r_lcd_pos_y * 6'd48);
             end
 
-            if (r_pos_x_fixed >= 560 && r_pos_x_fixed <= 608) begin
-                r_rom_raddr <= (r_pos_x_fixed - 560) + (r_lcd_pos_y * 48);
+            if (r_pos_x_fixed >= 10'd560 && r_pos_x_fixed <= 10'd608) begin
+                r_rom_raddr <= (r_pos_x_fixed - 10'd560) + (r_lcd_pos_y * 6'd48);
             end
 
-            if (r_pos_x_fixed >= 640 && r_pos_x_fixed <= 688) begin
-                r_rom_raddr <= (r_pos_x_fixed - 640) + (r_lcd_pos_y * 48);
+            if (r_pos_x_fixed >= 10'd640 && r_pos_x_fixed <= 10'd688) begin
+                r_rom_raddr <= (r_pos_x_fixed - 10'd640) + (r_lcd_pos_y * 6'd48);
             end
 
-            if (r_pos_x_fixed >= 720 && r_pos_x_fixed <= 768) begin
-                r_rom_raddr <= (r_pos_x_fixed - 720) + (r_lcd_pos_y * 48);
+            if (r_pos_x_fixed >= 10'd720 && r_pos_x_fixed <= 10'd768) begin
+                r_rom_raddr <= (r_pos_x_fixed - 10'd720) + (r_lcd_pos_y * 6'd48);
             end
         end
     end
