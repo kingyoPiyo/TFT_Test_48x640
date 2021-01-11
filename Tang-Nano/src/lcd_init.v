@@ -17,7 +17,7 @@ module lcd_init (
 
     reg     [5:0]   r_init_state;
 
-    // LCDリセット信号生成(5ms Active)
+    // LCDリセット信号生成
     reg             r_lcd_rst_out;  // 出力されるReset信号
     reg             r_lcd_rst_int;  // 内部シーケンス用Reset信号
     reg     [15:0]  r_cnt_lcd_rst;  // リセットタイミング生成用カウンタ
@@ -50,7 +50,7 @@ module lcd_init (
         end else if (~r_delay_130ms_fin) begin
             if (r_init_state == 6'd61) begin
                 r_cnt_delay_130ms <= r_cnt_delay_130ms + 21'd1;
-                if (r_cnt_delay_130ms == 21'd1560000) begin // 130ms:1560000@24MHz
+                if (r_cnt_delay_130ms == 21'd1560000) begin // 130ms:1560000@12MHz
                     r_delay_130ms_fin <= 1'b1;
                 end
             end
