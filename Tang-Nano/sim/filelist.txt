@@ -1,0 +1,9 @@
+./rtl/tb_top.v
+./rtl/ip/prim_sim.v
+../src/ip/gowin_pll/gowin_pll.v
+
+../src/lcd_top.v
+../src/lcd_ctrl.v
+../src/lcd_init.v
+../src/lcd_sushi.v
+../src/sushi_ROM.v

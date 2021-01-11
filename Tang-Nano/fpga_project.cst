@@ -1,0 +1,54 @@
+//Copyright (C)2014-2020 Gowin Semiconductor Corporation.
+//All rights reserved. 
+//File Title: Physical Constraints file
+//GOWIN Version: 1.9.7 Beta
+//Part Number: GW1N-LV1QN48C6/I5
+//Device: GW1N-1
+//Created Time: Mon 01 11 03:51:09 2021
+
+// Input signal
+IO_LOC "mco" 35;
+IO_PORT "mco" IO_TYPE=LVCMOS33 PULL_MODE=UP BANK_VCCIO=3.3;
+IO_LOC "res_n" 15;
+IO_PORT "res_n" IO_TYPE=LVCMOS33 PULL_MODE=UP BANK_VCCIO=3.3;
+IO_LOC "btn_b" 14;
+IO_PORT "btn_b" IO_TYPE=LVCMOS33 PULL_MODE=UP BANK_VCCIO=3.3;
+
+// LCD data bus
+IO_LOC "lcd_data[0]" 38;
+IO_PORT "lcd_data[0]" IO_TYPE=LVCMOS33 PULL_MODE=UP DRIVE=8;
+IO_LOC "lcd_data[1]" 39;
+IO_PORT "lcd_data[1]" IO_TYPE=LVCMOS33 PULL_MODE=UP DRIVE=8;
+IO_LOC "lcd_data[2]" 40;
+IO_PORT "lcd_data[2]" IO_TYPE=LVCMOS33 PULL_MODE=UP DRIVE=8;
+IO_LOC "lcd_data[3]" 41;
+IO_PORT "lcd_data[3]" IO_TYPE=LVCMOS33 PULL_MODE=UP DRIVE=8;
+IO_LOC "lcd_data[4]" 42;
+IO_PORT "lcd_data[4]" IO_TYPE=LVCMOS33 PULL_MODE=UP DRIVE=8;
+IO_LOC "lcd_data[5]" 43;
+IO_PORT "lcd_data[5]" IO_TYPE=LVCMOS33 PULL_MODE=UP DRIVE=8;
+IO_LOC "lcd_data[6]" 44;
+IO_PORT "lcd_data[6]" IO_TYPE=LVCMOS33 PULL_MODE=UP DRIVE=8;
+IO_LOC "lcd_data[7]" 45;
+IO_PORT "lcd_data[7]" IO_TYPE=LVCMOS33 PULL_MODE=UP DRIVE=8;
+
+// LCD Control signal
+IO_LOC "lcd_wr" 11;
+IO_PORT "lcd_wr" IO_TYPE=LVCMOS33 PULL_MODE=UP DRIVE=8;
+IO_LOC "lcd_dc" 10;
+IO_PORT "lcd_dc" IO_TYPE=LVCMOS33 PULL_MODE=UP DRIVE=8;
+IO_LOC "lcd_rst" 46;
+IO_PORT "lcd_rst" IO_TYPE=LVCMOS33 PULL_MODE=UP DRIVE=8;
+
+// Use I/O Register
+INS_LOC "lcd_ctrl/o_lcd_data_0_s0" 38;
+INS_LOC "lcd_ctrl/o_lcd_data_1_s0" 39;
+INS_LOC "lcd_ctrl/o_lcd_data_2_s0" 40;
+INS_LOC "lcd_ctrl/o_lcd_data_3_s0" 41;
+INS_LOC "lcd_ctrl/o_lcd_data_4_s0" 42;
+INS_LOC "lcd_ctrl/o_lcd_data_5_s0" 43;
+INS_LOC "lcd_ctrl/o_lcd_data_6_s0" 44;
+INS_LOC "lcd_ctrl/o_lcd_data_7_s0" 45;
+INS_LOC "lcd_ctrl/o_lcd_wr_s0" 11;
+INS_LOC "lcd_ctrl/o_lcd_dc_s0" 10;
+INS_LOC "lcd_ctrl/o_lcd_rst_s0" 46;

@@ -1,0 +1,16 @@
+.vscode/
+*.user
+impl/gwsynthesis/*
+!impl/gwsynthesis/*.cfg
+impl/temp/*
+impl/pnr/*
+!impl/pnr/*.cfg
+!impl/pnr/*.fs
+impl/synthesize/*
+!impl/synthesize/*.cfg
+
+#ModelSim
+sim/work/
+sim/modelsim.ini
+sim/*.wlf
+sim/*.log
