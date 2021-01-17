@@ -1,6 +1,6 @@
 
 // 128x128 LCD
-// ST7735？
+// Driver IC : ST7735S
 
 // Sleep Out
 send_CMD(0x11, 0);
@@ -30,7 +30,7 @@ send_CMD(0x3A, 1);
 send_CMD(0xB4, 0);
 send_CMD(0x03, 1);
 
-// Power Control 1 ※パラメータ数不一致
+// Power Control 1
 send_CMD(0xC0, 0);
 send_CMD(0x62, 1);
 send_CMD(0x02, 1);
@@ -55,7 +55,7 @@ send_CMD(0xC4, 0);
 send_CMD(0x8D, 1);
 send_CMD(0xEE, 1);
 
-// VCOM Control 1 ※パラメータ数不一致
+// VCOM Control 1
 send_CMD(0xC5, 0);
 send_CMD(0x0D, 1);
 
