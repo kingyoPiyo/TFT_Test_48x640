@@ -1,2 +1,3 @@
 doc/* linguist-documentation
 Tang-Nano/impl/* linguist-documentation
+Tang-Nano/sim/rtl/ip/* linguist-vendored
