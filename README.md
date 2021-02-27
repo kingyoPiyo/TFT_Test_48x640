@@ -7,11 +7,14 @@
 Arduino NanoのI/O電圧は5Vですが、本LCDの信号レベルは3.3V系です。実験ではArduinoの電源電圧を3.3Vに下げて動作させてます。  
 <img src="doc/top_arduino.png">  
 
+### 配線
+<img src="doc/pinout.png">  
+
 ## Tang Nano版
 Arduino Nanoで🍣を流そうとしたところ、処理速度が足りずに残念な感じになったので、Tang-Nano FPGAに移植してみました。  
 <img src="doc/top_tang_nano.png">  
 
-### LCDピンと信号名の対応
+### 配線
 | LCDピン番号 | ピン名 | I/O | RTL信号名 | 説明 |
 |----|----|----|----|----|
 | 1 | GND | - | - | |
