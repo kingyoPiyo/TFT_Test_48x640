@@ -2,11 +2,11 @@ vlib work
 vmap work work
 
 vlog \
-	-L work \
-	-l vlog.log \
-	-work work \
-	-timescale "1ns / 100ps"  \
-	-f filelist.txt 
+    -L work \
+    -l vlog.log \
+    -work work \
+    -timescale "1ns / 100ps"  \
+    -f filelist.txt 
 
 vsim tb_top -wlf vsim.wlf -wlfcachesize 512
 
